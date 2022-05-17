@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <title>EXERCÍCIO 06</title>
+    </head>
+    <body>
+        <div class="jumbotron">
+            <div class="container">
+                <h1 class="page-header">Cálculo de Salário - EXERCÍCIO 06</h1>
+                <p>Fazer um programa para ler o nome de um(a) funcionário(a), o valor que
+                    ele(a) recebe por hora, e a quantidade de horas trabalhadas por ele(a). Ao
+                    final, mostrar o valor do pagamento do funcionário com uma mensagem
+                    explicativa.</p>
+            </div>
+        </div>
+        <div class="container formulario">
+            <form>
+                <div class="form-group">
+                    <div class="input-group input-group-md">
+                        <span class="input-group-addon">Nome:</span>
+                        <input id="inputNome" type="text" class="form-control" aria-describedby="sizing-addon1">
+                        <span class="input-group-addon"></span> 
+                    </div>                  
+                </div>
+                <div class="form-group">
+                    <div class="input-group input-group-md">
+                        <span class="input-group-addon">Valor por hora:</span>
+                        <input id="inputValorHora" type="number" class="form-control" aria-describedby="sizing-addon1">
+                        <span class="input-group-addon">reais.</span> 
+                    </div>                  
+                </div>
+                <div class="form-group">
+                    <div class="input-group input-group-md">
+                        <span class="input-group-addon">Horas trabalhadas:</span>
+                        <input id="inputHorasTrab" type="number" class="form-control" aria-describedby="sizing-addon1">
+                        <span class="input-group-addon">horas.</span> 
+                    </div>                  
+                </div>                       
+                <button type="button" class="btn btn-info" onclick="calcular()">Calcular</button>
+            </form>
+        </div>
+        <br>
+        <div class="container formulario" id="form2">
+            <form>
+                <div class="form-group">
+                    <div class="input-group input-group-md">
+                        <span class="input-group-addon">Resultado:</span>                
+                        <p class="form-control" id="valorResultado"></p>
+                        <span class="input-group-addon"></span>                    
+                    </div>            
+                </div>       
+            </form>      
+        </div>
+        <div class="jumbotron">
+            <div class="container">
+                <p>Espero que  tenha gostado! Feito por Aline Almeida ❤️</p>             
+            </div>
+        </div>
+        <script src="./script.js"></script>     
+    </body>
+</html>
